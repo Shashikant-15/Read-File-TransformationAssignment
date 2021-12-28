@@ -5,18 +5,18 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
-
-public class MainClassImplementation {
-
+// created public type class for implementing a read file
+public class ReadFileTransformImplementation {
+    // main class called
     public static void main(String[] args) throws IOException {
         File file = new File("/home/knoldus/Desktop/Read-File-TransformationAssignment/src/com/knoldus/KUP/file.txt");
 
         BufferedReader br = new BufferedReader(new FileReader(file));
-
+        // Hash Map used for taking Input as Integer as well string
         HashMap<String,Integer> map=new HashMap<String,Integer>();
 
         String st;
-
+        // loop started here for reading line one by one
         while ((st = br.readLine()) != null) {
             String[] arr=st.split("\\s");
             for (String s : arr) {
@@ -26,7 +26,7 @@ public class MainClassImplementation {
                     map.put(s, map.get(s) + 1);
             }
         }
-
+        // output generated from here
         System.out.println(map);
 
     }
