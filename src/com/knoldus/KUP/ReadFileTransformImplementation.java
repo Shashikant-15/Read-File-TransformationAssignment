@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class ReadFileTransformImplementation {
     // main class called
     public static void main(String[] args) throws IOException {
-        File file = new File("/home/knoldus/Desktop/Read-File-TransformationAssignment/src/com/knoldus/KUP/file.txt");
+        File file = new File("/home/knoldus/KUP-Assign./Read-File-TransformationAssignment/src/com/knoldus/KUP/file.txt");
 
         BufferedReader br = new BufferedReader(new FileReader(file));
         // Hash Map used for taking Input as Integer as well string
